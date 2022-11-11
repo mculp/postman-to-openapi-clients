@@ -1,0 +1,38 @@
+{
+  "name": "@mculp/postman-to-openapi-clients",
+  "version": "0.0.1",
+  "description": "Generate OpenAPI 3 Specs / Client Libraries from Postman Schemas",
+  "main": "src/index.js",
+  "author": "mculp / tecfu",
+  "private": false,
+  "license": "MIT",
+  "directories": {
+    "postman-definitions": "postman-definitions",
+    "openapi-schemas": "openapi-schemas",
+    "src": "src",
+    "bin": "bin"
+  },
+  "dependencies": {
+    "@openapitools/openapi-generator-cli": "^2.5.2",
+    "json5": "^2.2.1"
+  },
+  "devDependencies": {
+    "colors": "^1.4.0",
+    "diff": "^5.1.0",
+    "yaml": "^2.1.3",
+    "@openapitools/openapi-generator-cli": "^2.5.2"
+  },
+  "scripts": {
+    "generate:spec": "node ./bin/index.js ",
+    "tests:save": "node test/mocha.conf.js save",
+    "tests:display": "node ./test/mocha.conf.js display"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mculp/postman-to-openapi-clients.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mculp/postman-to-openapi-clients/issues"
+  },
+  "homepage": "https://github.com/mculp/postman-to-openapi-clients#readme"
+}
